@@ -1,0 +1,23 @@
+/* 
+混入样式
+*/
+
+// 单行文本超出显示省略号
+.text-line-ellips{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+// 清除浮动
+.clear-both {
+  &::after {
+    clear: both;
+    content: '';
+    display: block;
+    height: 0;
+    overflow: hidden;
+  }
+}
+
+@color:red;

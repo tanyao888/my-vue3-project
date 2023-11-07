@@ -1,0 +1,28 @@
+{
+  "files": [],
+  "compilerOptions": {
+    "types": ["node","ES2015","browser"],
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*":["src/*"],
+      "util/*":["src/utils/*"],
+    },
+  },
+  "include": ["src/**/*"],
+  "exclude": [
+    "node_modules",
+    "public/**",
+    "dist/**"
+  ],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    },
+    {
+      "path": "./tsconfig.app.json"
+    }
+  ]
+}
